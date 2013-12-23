@@ -5,4 +5,4 @@ if [ $? -gt 0 ]; then
 	docker build -t dogeminer .
 fi
 
-docker run -i -t dogeminer -v .:/mnt:ro bash /mnt/scripts/start.sh
+docker run -i -v $PWD:/mnt:ro -t dogeminer bash /mnt/scripts/start.sh
