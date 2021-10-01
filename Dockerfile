@@ -5,3 +5,4 @@ RUN cd /root/ && tar xzf pooler-cpuminer-*.tar.gz
 RUN cd /root/cpuminer-* && ./configure CFLAGS="-O3"
 RUN cd /root/cpuminer-* && make
 RUN cd /root/cpuminer-* && make install
+// Testing for Hacktober fest
